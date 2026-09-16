@@ -65,7 +65,7 @@ curl -sS -X POST https://czid.casuyi.com/mcp \
 
 ## Docs
 
-- [examples/quickstart.md](examples/quickstart.md) — every call shape: list tools, free call, 402 challenge, x402 example
+- [examples/quickstart.md](examples/quickstart.md) — every call shape: list tools, initialize, tool calls
 - [examples/clients.md](examples/clients.md) — connect from Claude Code / Desktop / Cursor / any MCP client
 - [clients/python.py](clients/python.py) — minimal Python client (stdlib only)
 - [clients/typescript.ts](clients/typescript.ts) — minimal TypeScript client (fetch only)
