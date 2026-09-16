@@ -15,13 +15,13 @@ MCP `2026-07-28` (2025-era clients supported too), stateless Streamable HTTP, wo
 ## Tools
 
 | Tool | Price | What it does |
-|---|---|---|
+|---|---|
 | `company_lookup(id)` | **free** | ARES basic register: name, legal form, registered address, NACE, DIČ, data box, active registers |
-| `check_vat(ids[])` | paid | RZP register: VAT payer (plátce DPH) yes/no, effective since, tax office. Batch up to 20 IČOs/DIČs |
-| `entity_status(id)` | paid | KYC-style snapshot: active/cancelled, register presence (VR, RZP, insolvency RS, RCNS, SZR…), insolvency record |
-| `search_company(name)` | paid | Company name search (prefix, case-insensitive) → IČOs + addresses |
-| `address_check(address)` | paid | Free-text Czech address → RÚIAN-standardized (KOD ADM, PSC, city part) |
-| `validate_cz(ico/dic/iban/variableSymbol)` | paid | Offline checksum validation: IČO, DIČ, IBAN, variable symbol |
+| `check_vat(ids[])` | RZP register: VAT payer (plátce DPH) yes/no, effective since, tax office. Batch up to 20 IČOs/DIČs |
+| `entity_status(id)` | KYC-style snapshot: active/cancelled, register presence (VR, RZP, insolvency RS, RCNS, SZR…), insolvency record |
+| `search_company(name)` | Company name search (prefix, case-insensitive) → IČOs + addresses |
+| `address_check(address)` | Free-text Czech address → RÚIAN-standardized (KOD ADM, PSC, city part) |
+| `validate_cz(ico/dic/iban/variableSymbol)` | Offline checksum validation: IČO, DIČ, IBAN, variable symbol |
 
 `id` accepts IČO (8 digits) or DIČ (`CZ` + 10 digits).
 
