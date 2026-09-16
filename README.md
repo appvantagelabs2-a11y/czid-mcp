@@ -45,18 +45,11 @@ claude mcp add czid --transport http https://czid.casuyi.com/mcp
 }
 ```
 
-## Pricing — two ways to use paid tools
+## Pricing
 
-1. **Free trial key (easiest, self-serve)** — one curl, no account:
-   ```bash
-   curl -s -X POST https://czid.casuyi.com/trial -H 'content-type: application/json' -d '{"email":"you@example.com"}'
-   # -> {"key":"trial-…","quota":50,"validDays":90}
-   ```
-   50 free paid calls, 90 days, **works on both czid.casuyi.com and mcp.casuyi.com**. Send it as `X-API-Key: *** header on every request; responses carry `X-Trial-Remaining: N`. When exhausted, calls fall back to x402.
-   *(Anti-abuse: Cloudflare Turnstile captcha on the public endpoint — coming in the signup widget; IP daily cap applies.)*
-2. **x402 (permissionless, no account)** — an unpaid paid-tool call returns HTTP `402` with USDC payment instructions; an x402-capable agent client signs and retries automatically. Network: `base-sepolia` today (mainnet on request). Price per call: see `GET https://czid.casuyi.com/health`.
+**All tools are completely free.** No API key, no payment, no signup — the endpoints are free marketing for the [Casuyi](https://casuyi.com) app portfolio. Please use them.
 
-`company_lookup` is free and never gated.
+(The x402 pay-per-call + trial-key flow is implemented in `http-paid.js` but disabled on the hosted servers; set `PAY_TO_ADDRESS` to re-enable when self-hosting.)
 
 ## Try it right now (curl, no client needed)
 
