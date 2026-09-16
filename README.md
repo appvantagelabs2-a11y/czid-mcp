@@ -64,15 +64,15 @@ curl -sS -X POST https://czid.casuyi.com/mcp \
 
 ## Docs
 
-- [examples/quickstart.md](examples/quickstart.md) — every call shape: list tools, free call, 402 challenge, trial key, paid x402
+- [examples/quickstart.md](examples/quickstart.md) — every call shape: list tools, free call, 402 challenge, x402 example
 - [examples/clients.md](examples/clients.md) — connect from Claude Code / Desktop / Cursor / any MCP client
 - [clients/python.py](clients/python.py) — minimal Python client (stdlib only)
 - [clients/typescript.ts](clients/typescript.ts) — minimal TypeScript client (fetch only)
 
 ## Privacy & data
 
-Legal-entity public data only (ARES open data). Where the register publishes a DIČ derived from a birth number (OSVČ), this service surfaces exactly what the register publishes — no additional personal data. Every response includes the source and its `datumAktualizace` per the CC BY 4.0 (ND) license. The service keeps no request logs tied to identities; trial keys are usage-counter only.
+Legal-entity public data only (ARES open data). Where the register publishes a DIČ derived from a birth number (OSVČ), this service surfaces exactly what the register publishes — no additional personal data. Every response includes the source and its `datumAktualizace` per the CC BY 4.0 (ND) license. The service keeps no request logs tied to identities; no accounts or identities are stored.
 
 ## Status / support
 
-Open an [issue](../../issues) for: trial keys, bulk billing, mainnet x402, custom fields, uptime questions.
+Open an [issue](../../issues) for: custom fields, uptime questions.
