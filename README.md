@@ -16,7 +16,7 @@ MCP `2026-07-28` (2025-era clients supported too), stateless Streamable HTTP, wo
 
 | Tool | What it does |
 |---|---|
-| `company_lookup(id)` | **free** | ARES basic register: name, legal form, registered address, NACE, DIČ, data box, active registers |
+| `company_lookup(id)` | ARES basic register: name, legal form, registered address, NACE, DIČ, data box, active registers |
 | `check_vat(ids[])` | RZP register: VAT payer (plátce DPH) yes/no, effective since, tax office. Batch up to 20 IČOs/DIČs |
 | `entity_status(id)` | KYC-style snapshot: active/cancelled, register presence (VR, RZP, insolvency RS, RCNS, SZR…), insolvency record |
 | `search_company(name)` | Company name search (prefix, case-insensitive) → IČOs + addresses |
